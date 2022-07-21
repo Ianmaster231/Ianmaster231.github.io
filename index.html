@@ -1,0 +1,630 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="../HTML/style.css" />
+<link rel="apple-touch-icon" type="image/png" href="../HTML/Logo.svg" />
+
+<link rel="shortcut icon" type="image/x-icon" href="../HTML/Logo.svg" />
+
+<link rel="mask-icon" type="image/x-icon" href="../HTML/Logo.svg" color="#111" />
+
+
+  <title>IZ Portofolio 2022</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+  <link href='//fonts.googleapis.com/css?family=Roboto:400,100,400italic,700italic,700' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Radley:400italic' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Lora:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
+
+  
+  <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css'>
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.2.3/animate.min.css'>
+  
+<style>
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    border-radius: 10px;
+    background: #e8f5e9;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background:  darkmagenta;
+  
+}
+::-webkit-scrollbar-thumb:window-inactive {
+    background:  #e8f5e9; 
+}
+
+body{
+  position:relative;
+    background: #000429;
+}
+
+#Home{
+  padding-top:50px;
+  height:500px;
+  
+}
+
+#About{
+  padding-top:50px;
+  height:auto;
+padding-bottom:50px;
+
+  
+}
+#Portfolio{
+  padding-top:50px;
+  height:auto;
+  padding-bottom:50px;
+  
+}
+#Contact{
+  padding-top:50px;
+  height:auto;
+    padding-bottom:100px;
+}
+
+.footer-manage{
+  background-color:darkmagenta;
+  border-color: #e8f5e9;
+  border-width:2px;
+  
+  color:#FFFFFF;
+  padding-top:20px;
+}
+
+.navbar{
+  box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.3);
+}
+.navbar-default {
+  background-color: darkmagenta;
+  border-color: darkmagenta;
+}
+.navbar-default .navbar-brand {
+  color:  #e8f5e9;
+}
+.navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus {
+  color:  #e8f5e9;
+}
+.navbar-default .navbar-text {
+  color: #e8f5e9;
+}
+.navbar-default .navbar-nav > li > a {
+  color: #e8f5e9;
+}
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+  color:  #e8f5e9;
+}
+.navbar-default .navbar-nav > li > .dropdown-menu {
+  background-color:  #e8f5e9;
+}
+.navbar-default .navbar-nav > li > .dropdown-menu > li > a {
+  color: #e8f5e9;
+}
+.navbar-default .navbar-nav > li > .dropdown-menu > li > a:hover,
+.navbar-default .navbar-nav > li > .dropdown-menu > li > a:focus {
+  color:  #e8f5e9;
+  background-color:  #e8f5e9;
+}
+.navbar-default .navbar-nav > li > .dropdown-menu > li > .divider {
+  background-color:  #e8f5e9;
+}
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
+  color: darkmagenta;
+  background-color:  #e8f5e9;
+}
+.navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus {
+  color:  darkmagenta;
+  background-color: #388e3c;
+}
+.navbar-default .navbar-toggle {
+  border-color:  darkmagenta;
+}
+.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
+  background-color:  darkmagenta;
+}
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: #e8f5e9;
+}
+.navbar-default .navbar-collapse,
+.navbar-default .navbar-form {
+  border-color: #e8f5e9;
+}
+.navbar-default .navbar-link {
+  color: darkmagenta;
+}
+.navbar-default .navbar-link:hover {
+  color:  darkmagenta;
+}
+
+@media (max-width: 767px) {
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a {
+    color: #e8f5e9;
+  }
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover, .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
+    color:  #e8f5e9;
+  }
+  .navbar-default .navbar-nav .open .dropdown-menu > .active > a, .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover, .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
+    color:  #e8f5e9;
+    background-color: #388e3c;
+  }
+}
+
+/*-----contact---*/
+.cont{
+  width:100%;
+  height:auto;
+}
+.btn-contact{
+  color:#e8f5e9;
+}
+
+/*--Parallax--*/
+.intro-header {
+    height: 600px;  
+    padding-top: 50px; 
+    padding-bottom: 50px;
+    text-align: center;
+   background: url('https://media1.giphy.com/media/McgpeHfd3LRvxe7EkD/giphy.gif?cid=790b7611439f4896b9219f294a82699123b3969219fb0b40&rid=giphy.gif&ct=g') no-repeat center center fixed;
+    background-size: cover;
+    height: 500px;
+}
+.bg-overlay {
+  background:rgba(0,0,0, 0.3);
+  height: 450px;
+}
+#profilePic{
+  display: block;
+		border-radius: 15%;
+		width: 200px;
+		height: 5%;
+		margin: 0 auto;
+}
+.img{
+  margin-top:50px;
+  margin-bottom:20px;
+  
+}
+
+div h2 {
+		text-transform: uppercase;
+		color: #fff;
+		text-align: center;
+		display: block;
+		font-size: 2em;
+		line-height: 1em;
+		padding-top: 5px;
+    font-family: Verdana, sans-serif;
+	}
+  A:hover { COLOR: white; transition: 1sec;}
+  
+
+	div h2 span {
+		display: block;
+		font-size: 14px;
+		padding-top: 10px;
+		font-weight: normal;
+		color: #fff;
+		font-family: ProximaNovaLight;
+		letter-spacing: 0.2em;
+    
+	}
+  a {
+  outline: none;
+  text-decoration: none;
+  padding: 2px 1px 0;
+}
+
+a:link {
+  color: white;
+}
+
+a:visited {
+  color: rgb(255, 0, 255);
+}
+
+a:focus, a:hover {
+  border-bottom: 2px solid;
+}
+
+a:active {
+  color: gold;
+}
+
+/*---Card---*/
+blockquote{
+   display:block;
+  background: #fff;
+  padding: 25px 20px 25px 45px;
+  margin: 0 0 0px;
+  position: relative;
+  
+  /*Font*/
+  font-family: Georgia, serif;
+  font-size: 16px;
+  line-height: 1.2;
+  color: #666;
+  text-align: justify;
+  
+  border-left: 10px solid #A5D6A7;
+  border-right: 2px solid #C8E6C9;
+  
+   box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.3);
+}
+ /*About*/
+.about-header {
+    height: auto;  
+    padding-top: 50px; 
+    position:relative
+    text-align: center;
+   background: url('http://www.bluenileinfra.com/wp-content/uploads/2015/05/Savin-NY-Website-Background-Web.jpg?3710d3') no-repeat center center fixed;
+    background-size: cover;
+    
+}
+
+.portfolio-header {
+    height: auto;  
+    padding-top: 50px; 
+  padding-bottom:50px;
+    position:relative;
+    text-align: center;
+   background: url('http://directdoubler.com/wp-content/uploads/2013/11/At-the-Office-Mac-Apple-Wallpapers-Creative-Planning-2982192420-1920x500.jpeg') no-repeat center center fixed;
+    background-size: cover;
+    
+}
+.contact-header {
+  position:relative
+    padding-top: 50px; 
+    color:#fff;
+    text-size:20px;
+    text-align: left;
+   background: url('http://dc202.4shared.com/img/qZVdYMF2/s7/13ef0bfc1f8/bookends-1440x900') no-repeat center center fixed;
+    background-size: cover;
+    height: auto;
+  padding-bottom:100px;
+}
+.box{
+	width:90%;
+	height:auto;
+  left:-webkit-calc( 50% - 250px );
+	border-radius:5px;
+background:rgba(0,0,0, 0.1);
+	@include box-shadow(0 20px 30px rgba(0,0,0,1));
+	border:1px solid rgba(255,255,255,0.3);
+	padding:20px;
+	@include box-sizing(border-box);
+  font-family:Lora;
+  font-size:16px;
+  display: flex;
+   @media (max-width: @screen-xs) {
+    div{font-size: 8px;}
+    small{font-size:4px;}
+    span{font-size:8px;}
+   }
+}
+
+kbd{
+  background-color:#6f006f;
+}
+#blue{
+  background-color:#ae00ae;
+  color:lightgoldenrodyellow;
+}
+#kbd2{
+  background-color:darkmagenta;
+  color:#fff;
+}
+    figure {
+  position: sticky;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+
+
+</style>
+
+  <script>
+  window.console = window.console || function(t) {};
+</script>
+
+  
+  
+  <script>
+  if (document.location.search.match(/type=embed/gi)) {
+    window.parent.postMessage("resize", "*");
+  }
+</script>
+
+
+</head>
+
+<body translate="no" >
+  <body data-spy="scroll" data-target=".navbar" data-offset="50">
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+
+        <ul class="nav navbar-nav navbar-right">
+            
+          <li><a href="#Home"><i class="fa fa-home fa-2x" data-toggle="tooltip" title="Home" data-placement="bottom">  </i> </a></li>
+          <li><a href="#About"><i class="fa fa-user fa-2x" data-toggle="tooltip" title="About" data-placement="bottom">  </i> </a></li>
+          <li><a href="#Portfolio"><i class="fa fa-desktop fa-2x" data-toggle="tooltip" title="Portfolio" data-placement="bottom">  </i> </a></li>
+          <li><a href="#Contact"><i class="fa fa-envelope fa-2x" data-toggle="tooltip" title="Contact" data-placement="bottom">  </i> </a></li>
+          <li>
+            <a></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div id="Home" class="intro-header">
+    <div class="bg-overlay">
+      <div class="container">
+        <div class="row img">
+          <div class="col-md-12 ">
+            <div class="col-md-4">
+            </div>
+            <div class="col-md-4">
+              <img src="../HTML/Images/Profile2.jpg" class="img-responsive" id="profilePic"></img>
+            </div>
+            <div class="col-md-4">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-2">
+            </div>
+            <div id="name" class="col-md-8">
+              <h2>Ian Zammit<span>Multimedia Software Development</span></h2>
+            </div>
+            <div class="col-md-2">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-4"></div>
+            <div class="col-md-4">
+              <form method="get" action="../CV_Ian_Zammit.pdf" >
+                <button class="btn-glow">CV Download</button>   
+              </form>
+              <br>
+              <form method="get" action="../LetterOfReferences.pdf">
+                <button class="btn-glow2">Letter References</button>
+              </form>
+              <style>
+   
+              </style>
+            </div>
+            <div class="col-md-4"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+ <!-- <blockquote class="text-center">
+    <p><i class="fa fa-quote-left fa-1x"></i> There is no substitute to hardwork</p>
+    <footer><cite title="Source Title">Thomas A. Edison</cite></footer>
+  </blockquote>
+-->
+    <div id="About">
+  <div  class="about-header">
+    <p style="color: #F9F6EE;
+              font-family: Verdana, sans-serif;font-size:30px;text-align:center;">| About Me |</p>
+    <div class="container box">
+      <div class="row text-responsive">
+          <div class="col-md-6 col-sm-6 col-xs-12 text-default text-responsive" style="text-align:justify;font-size:16px; font-family: Verdana, sans-serif; color:lightgoldenrodyellow;">
+          Greetings I was a student studying at the  <strong>Institute Of Information Communication Technology</strong> </strong> with <strong>Mcast</strong> . 
+          In 2022 I have finished my Bachleor Degree in  <strong>Multimedia Software Development.</strong><br>
+            <br> Currently I am doing a work experience with the company <strong>RIFF Film Festival</strong> in Iceland Reykjavik. I am incharge of website changes with 
+          with wordpress elementor platform. I have started this experience in 3 July 2022 till 14 October 2022.<br><br>My lastest work was with the <strong>KNZ</strong> group where in this field of work I was introduced to wordpress and elementor front end, while also I have improved there website both in visual design, functionallity with regards to the performance, also with my previous personal experience, I have created Animated GIFs as they can be seen here. <strong><a class="GIFLINK" href="../HTML/GIFPage.html">GIF'S Created</a></strong>
+
+          </div>
+          
+          <div class="col-md-6 col-sm-6 col-xs-12 text-default text-responsive " style="text-align:justify;font-family: Verdana, sans-serif;font-size:16px;color:lightgoldenrodyellow;">
+              My interest in Game Development and 3D Modelling have always been impressed by seeing the new latest game development is a source of motivation and inspiration for the road that I want to partake in. <strong>My Game Inspiration are</strong> <u>Last of Us</u>, <u>Resident Evil</u>, <u>DayZ</u>, <u>7 Days To Die</u>, <u>GTAV</u>, <u>BF3</u>, <small> many more</small>.
+          <br>
+          <br>
+          <strong>Information About Me: </strong> I am born and raised in the island of Malta. Was born on June 14 1997. Have a casual small collection of comics, drawing/sketching, video editing, game development, 3D structuring, reading manga, watching movies and driving.
+          <br><br>
+          <strong>My Plans For The Future: </strong> My current goal after studying for 8 years to get my degree is to get some work experience. I am planning after gaining some years of experience of getting my Master in the same field to further improve the quality of work and understanding.
+      </div>
+        
+        
+          <div class="col-md-12 col-sm-12 col-xs-12 text-responsive" style="font-size:16px;color:lightgoldenrodyellow;font-family: Verdana, sans-serif;">
+            <br>
+            Technical skills :&nbsp<kbd>HTML</kbd> <kbd>CSS</kbd> <kbd>JS</kbd> <kbd>Java</kbd> <kbd>Android Studio</kbd> <kbd>C#</kbd> <kbd>Python</kbd> <kbd>Google Cloud Platform</kbd> <kbd>Devops</kbd> <kbd>BlockChain</kbd> <kbd>Firebase</kbd>
+              
+            <br>Other Skills :&nbsp<kbd id="kbd2">Adobe Photoshop</kbd> <kbd id="kbd2">Adobe Premiere Pro</kbd> <kbd id="kbd2">Adobe Illustrator</kbd> <kbd id="kbd2">Adobe XD</kbd>  <kbd id="kbd2">Ableton Live</kbd> <kbd id="kbd2">Maya</kbd> <kbd id="kbd2">Unity</kbd> <kbd id="kbd2">Krita</kbd> 
+            <br>
+           
+            
+           Currently Learning/Improving : <kbd id="blue">Blender</kbd> <kbd id="blue">Wordpress</kbd> <kbd id="blue">3D Assets Creation</kbd> <kbd id="blue">Communication Skills</kbd> <kbd id="blue">Memorization</kbd>
+        </div>
+          
+          
+      </div>
+        
+    </div>
+      <br>
+      <div id="Portfolio">
+        <p style="color: #F9F6EE;
+        font-family: Verdana, sans-serif;;font-size:30px;text-align:center;">| Project Made |</p>
+        <div class="wrapper">
+          <div class="center-line">
+            <a href="#" class="scroll-icon"><i class="fas fa-caret-up"></i></a>
+          </div>
+          <div class="row row-1">
+            <section>
+              <i class="icon fas fa-home"></i>
+              <div class="details">
+                <span class="title" style="font-family: Verdana, sans-serif;"><strong>Thesis Project</strong></span>
+                <span style="font-family: Verdana, sans-serif;"><strong >June 2022</strong></span>
+                <div class="video-container">
+                  <iframe src="https://www.youtube.com/embed/fbm2kar-FkY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+              </div>
+              <p></p>
+              <div class="bottom">
+                <a href="#">Read more</a>
+                <i> - Project Made With Unity Game Engine & Firebase </i>
+              </div>
+            </section>
+          </div>
+          <div class="row row-2">
+            <section>
+              <i class="icon fas fa-star"></i>
+              <div class="details">
+                <span class="title"><strong>2D Memory Card Game</strong></span>
+                <span><strong>May 2021</strong></span>
+                <div class="video-container">
+                  <iframe src="https://www.youtube.com/embed/5q6ZbkYq13Y" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+              </div>
+              <p></p>
+              <div class="bottom">
+                <a href="#">Read more</a>
+                <i> - Project Made With Unity Game Engine & Excel </i>
+              </div>
+            </section>
+          </div>
+          <div class="row row-1">
+            <section>
+              <i class="icon fas fa-rocket"></i>
+              <div class="details">
+                <span class="title">Title of Section 3</span>
+                <span>3rd Jan 2021</span>
+              </div>
+              <p>Lorem ipsum dolor sit ameters consectetur adipisicing elit. Sed qui veroes praesentium maiores, sint eos vero sapiente voluptas debitis dicta dolore.</p>
+              <div class="bottom">
+                <a href="#">Read more</a>
+                <i>- Someone famous</i>
+              </div>
+            </section>
+          </div>
+          <div class="row row-2">
+            <section>
+              <i class="icon fas fa-globe"></i>
+              <div class="details">
+                <span class="title">Title of Section 4</span>
+                <span>4th Jan 2021</span>
+              </div>
+              <p>Lorem ipsum dolor sit ameters consectetur adipisicing elit. Sed qui veroes praesentium maiores, sint eos vero sapiente voluptas debitis dicta dolore.</p>
+              <div class="bottom">
+                <a href="#">Read more</a>
+                <i>- Someone famous</i>
+              </div>
+            </section>
+          </div>
+          <div class="row row-1">
+            <section>
+              <i class="icon fas fa-paper-plane"></i>
+              <div class="details">
+                <span class="title">Title of Section 5</span>
+                <span>5th Jan 2021</span>
+              </div>
+              <p>Lorem ipsum dolor sit ameters consectetur adipisicing elit. Sed qui veroes praesentium maiores, sint eos vero sapiente voluptas debitis dicta dolore.</p>
+              <div class="bottom">
+                <a href="#">Read more</a>
+                <i>- Someone famous</i>
+              </div>
+            </section>
+          </div>
+          <div class="row row-2">
+            <section>
+              <i class="icon fas fa-map-marker-alt"></i>
+              <div class="details">
+                <span class="title">Title of Section 6</span>
+                <span>6th Jan 2021</span>
+              </div>
+              <p>Lorem ipsum dolor sit ameters consectetur adipisicing elit. Sed qui veroes praesentium maiores, sint eos vero sapiente voluptas debitis dicta dolore.</p>
+              <div class="bottom">
+                <a href="#">Read more</a>
+                <i>- Someone famous</i>
+              </div>
+            </section>
+          </div>
+        </div>
+  </div>
+      </div>
+        </div>
+
+
+ 
+
+   
+  <footer class="footer">
+    <div class="container-fluid footer-manage text-center">
+      <div class="row">
+        <div class="col-md-4"></div>
+        <div class="col-md-4">
+          <a href="https://www.facebook.com/zammitian1/" target="_blank" class="btn btn-contact"><i class="fa fa-facebook fa-2x"></i></a>
+          <a href="https://github.com/Ianmaster231/Ian_Zammit_Repository" target="_blank" class="btn btn-contact"><i class="fa fa-github fa-2x"></i></a>
+          <a href="mailto: ian.zammit.a100896@mcast.edu.mt" target="_blank" class="btn btn-contact"><i class="fa fa-envelope-o fa-2x"></i></a>
+        </div>
+        <div class="col-md-4"></div>
+      </div>
+      
+      <p>Made  <i style="color:#d32f2f; font-family: Verdana, sans-serif;" class=" fa fa-copyright "></i> Ian Zammit</p>
+      
+    </div>
+  </footer>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script></body>
+    <script src="https://cpwebassets.codepen.io/assets/common/stopExecutionOnTimeout-1b93190375e9ccc259df3a57c1abc0e64599724ae30d7ea4c6877eb615f89387.js"></script>
+
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+<script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js'></script>
+      <script id="rendered-js" >
+$(".navbar-nav li a[href^='#']").on('click', function (e) {
+  // prevent default anchor click behavior
+  e.preventDefault();
+  // store hash
+  var hash = this.hash;
+  // animate
+  $('html, body').animate({
+    scrollTop: $(this.hash).offset().top },
+  400, function () {
+    // when done, add hash to url
+    // (default click behaviour)
+    window.location.hash = hash;
+  });
+});
+
+$(document).ready(function () {
+  $("#name").addClass("animated fadeIn");
+});
+$(function () {
+  $('[data-toggle="tooltip"]').tooltip();
+});
+//# sourceURL=pen.js
+    </script>
+
+  
+
+</body>
+
+</html>
+ 
