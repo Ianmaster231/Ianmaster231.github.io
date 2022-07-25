@@ -4,15 +4,11 @@
 <head>
 
   <meta charset="UTF-8">
-  
-<link rel="apple-touch-icon" type="image/png" href="../HTML/Logo.svg" />
-
-<link rel="shortcut icon" type="image/x-icon" href="../HTML/Logo.svg" />
-
-<link rel="mask-icon" type="image/x-icon" href="../HTML/Logo.svg" color="#111" />
+  <link rel="stylesheet" type="text/css" href="../HTML/style.css" />
+  <link rel="icon" type="image/x-icon" href="/HTML/Images/websiteicon.jpg">
 
 
-  <title>Ian Zammit Portofolio 2022</title>
+  <title>IZ Portofolio 2022</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
@@ -76,7 +72,7 @@ padding-bottom:50px;
   background-color:darkmagenta;
   border-color: #e8f5e9;
   border-width:2px;
-  
+  height:83px;
   color:#FFFFFF;
   padding-top:20px;
 }
@@ -183,26 +179,29 @@ padding-bottom:50px;
 }
 #profilePic{
   display: block;
-		border-radius: 50%;
-		width: 100px;;
-		height: auto;
+		border-radius: 15%;
+		width: 300px;
+		height: 5%;
 		margin: 0 auto;
 }
 .img{
-  margin-top:100px;;
+  margin-top:10%;
   margin-bottom:20px;
   
 }
+
 div h2 {
 		text-transform: uppercase;
 		color: #fff;
 		text-align: center;
 		display: block;
-		font-size: 3em;
+		font-size: 2em;
 		line-height: 1em;
 		padding-top: 5px;
-    font-family: Roboto;
+    font-family: Verdana, sans-serif;
 	}
+  A:hover { COLOR: white; transition: 1sec;}
+  
 
 	div h2 span {
 		display: block;
@@ -214,7 +213,32 @@ div h2 {
 		letter-spacing: 0.2em;
     
 	}
-
+  a {
+  outline: none;
+  text-decoration: none;
+  padding: 2px 1px 0;
+}
+.btn-glow {
+    font-family: Verdana, sans-serif;
+    font-size: auto;
+    width:auto;
+    font-weight: bold;
+    color: #fff;
+    background-color: #6f4cff26;
+    border: 3px solid #6f4cff90;
+    padding: 5px 15px;
+    cursor: pointer;
+    border-radius: 50px;
+    transition: all .3s ease;
+    text-align: center;
+  }
+  
+  .btn-glow:hover {
+    background-color: #6f4cff59;
+    border: 3px solid #6f4cff99;
+    box-shadow: #6f4cff80 0 0 20px 0;
+    transition: all .3s ease;
+  }
 /*---Card---*/
 blockquote{
    display:block;
@@ -382,29 +406,9 @@ figure img {
 
 <body translate="no" >
   <body data-spy="scroll" data-target=".navbar" data-offset="50">
-  <nav class="navbar navbar-default navbar-fixed-top">
-    <div class="container-fluid">
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-      </div>
-      <div class="collapse navbar-collapse" id="myNavbar">
-
-        <ul class="nav navbar-nav navbar-right">
-            
-          <li><a href="#Home"><i class="fa fa-home fa-2x" data-toggle="tooltip" title="Home" data-placement="bottom">  </i> </a></li>
-          <li><a href="#About"><i class="fa fa-user fa-2x" data-toggle="tooltip" title="About" data-placement="bottom">  </i> </a></li>
-          <li><a href="#Portfolio"><i class="fa fa-desktop fa-2x" data-toggle="tooltip" title="Portfolio" data-placement="bottom">  </i> </a></li>
-          <li><a href="#Contact"><i class="fa fa-envelope fa-2x" data-toggle="tooltip" title="Contact" data-placement="bottom">  </i> </a></li>
-          <li>
-            <a></a>
-          </li>
-        </ul>
-      </div>
-    </div>
+ 
+   
+    
   </nav>
   <div id="Home" class="intro-header">
     <div class="bg-overlay">
@@ -414,7 +418,7 @@ figure img {
             <div class="col-md-4">
             </div>
             <div class="col-md-4">
-              <img src="https://scontent.fmla2-1.fna.fbcdn.net/v/t39.30808-6/242236527_3776841815751808_9021927856551797639_n.jpg?_nc_cat=102&ccb=1-5&_nc_sid=09cbfe&_nc_ohc=wHMsP5-QahkAX9KKTpd&_nc_ht=scontent.fmla2-1.fna&oh=085dced5608212151ec12e71334164b0&oe=616CC6B7" class="img-responsive" id="profilePic"></img>
+              <img src="/HTML/Images/Profile2.jpg" class="img-responsive" id="profilePic"></img>
             </div>
             <div class="col-md-4">
             </div>
@@ -423,7 +427,7 @@ figure img {
             <div class="col-md-2">
             </div>
             <div id="name" class="col-md-8">
-              <h2>Ian Zammit<span>Multimedia Software Development</span></h2>
+              <h2>Ian Zammit<span>GIF Page Examples</span></h2>
                 
             </div>
             <div class="col-md-2">
@@ -432,8 +436,9 @@ figure img {
           <div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-4">
-              <a href="https://github.com/Ianmaster231/Ian_Zammit_Repository" target="_blank" class="btn btn-contact"><i class="fa fa-github fa-2x"></i></a>
-              <a href="mailto: ian.zammit.a100896@mcast.edu.mt" target="_blank" class="btn btn-contact"><i class="fa fa-envelope-o fa-2x"></i></a>
+              <form method="get" action="../index.html" >
+                <button class="btn-glow2">Home</button>   
+              </form>
             </div>
             <div class="col-md-4"></div>
           </div>
@@ -447,27 +452,28 @@ figure img {
     <footer><cite title="Source Title">Thomas A. Edison</cite></footer>
   </blockquote>
 -->
+
   <div id="About" class="about-header">
-    
+    <div class="container box">
     <p style="color: white;
-              font-family:'Lato',serif;font-size:20px;text-align:center; padding-left: 30px; padding-right: 30px;">Little Disclaimer the posters where not created by me. I simply had the Adobe Illustrator file and then created this GIF animations of the posters with the use of software Adobe Photoshop and Adobe Premiere Pro. This work was all done for the KNZ Group</p>
-  
+              font-family:'Lato',serif;font-size:20px;text-align:center; padding-left: 30px; padding-right: 30px;">Little Disclaimer : The posters where not created by me. I simply had access to the Adobe Illustrator file and then created this GIF animations of the posters with the use of software Adobe Photoshop and Adobe Premiere Pro. This work was all done for the KNZ Group</p>
+  </div>
   </div>
     <p style="color: white;
               font-family:'Lato',serif;font-size:20px;text-align:center;">| GIFS Created |</p>
     <figure><img src="https://media1.giphy.com/media/OLBN6JdalMlWKENKDd/giphy.gif"  height ="250px" width="250px" /></figure>
-<figure><img src="https://media1.giphy.com/media/GZe09boKyL8gD6LQGV/giphy.gif?cid=790b7611d1611c7baefd4d85c00576f3093b922890501189&rid=giphy.gif&ct=g" width="1000" height="1000"/></figure>
+<figure><img src="https://media1.giphy.com/media/GZe09boKyL8gD6LQGV/giphy.gif?cid=790b7611d1611c7baefd4d85c00576f3093b922890501189&rid=giphy.gif&ct=g" width="800px" height="800px"/></figure>
 <figure><img src="https://media0.giphy.com/media/EX59yvckKq6NWa9rVT/giphy.gif?cid=790b7611d9607cc0b2ed64bd791e8b287099c19b3107b5f3&rid=giphy.gif&ct=g" alt="this slowpoke moves"  width="250" /></figure>
-<figure><img src="https://media3.giphy.com/media/hoai6BFX2uvBbivDgM/giphy.gif?cid=790b76113fe48e30dfcf666498aa7eb0a340bf6a81b65ab3&rid=giphy.gif&ct=g" width="1000" height="1000"/></figure>
-<figure><img src="https://media3.giphy.com/media/dscJCzwuZYrBonT0DM/giphy.gif?cid=790b761145c95ac0214151fcde590d7d2e0a0f238250f18d&rid=giphy.gif&ct=g" width="1000" height="1000"/></figure>
-<figure><img src="https://media0.giphy.com/media/SuhiuOK0XfClW7eJGc/giphy.gif?cid=790b76118a60bbd86fd8acdb7a77f009c86349b41dcdde13&rid=giphy.gif&ct=g" width="1000" height="1000"/></figure>
-<figure><img src="https://media1.giphy.com/media/VUzX0Pt9RbKYA2nBnc/giphy.gif?cid=790b7611ae55913e8efe886abe222fface0be648b9143562&rid=giphy.gif&ct=g" width="1000" height="1000"/></figure>
-<figure><img src="https://media0.giphy.com/media/mz6ACkCXDtZY6brRgi/giphy.gif?cid=790b7611a8fd10b4c100b86c04c5ffcebf4a8022198577a3&rid=giphy.gif&ct=g" width="1000" height="1000"/></figure>
-<figure><img src="https://media2.giphy.com/media/dqxvHmzAkGT0jAZ3fo/giphy.gif?cid=790b7611fd9e4cdcb4bba86de3fabdaca4c2c8d2133bf38e&rid=giphy.gif&ct=g" width="1000" height="1000"/></figure>
-<figure><img src="https://media2.giphy.com/media/enhWl6VRtLGA7m1HRF/giphy.gif?cid=790b761192b324ab4b6ca0e4ff858c802241bd2cc5167428&rid=giphy.gif&ct=g" width="1000" height="1000"/></figure>
-<figure><img src="https://media3.giphy.com/media/TXZaPWXRqB79iEnpth/giphy.gif?cid=790b761145147e6229ffce689e60f68f394617e5ad7837f5&rid=giphy.gif&ct=g" width="1000" height="1000"/></figure>
-<figure><img src="https://media2.giphy.com/media/2tfoW38m7KBLbU0MtA/giphy.gif?cid=790b76112cade381cc6b91ee2d4463e2036ec386e01c7536&rid=giphy.gif&ct=g" width="1000" height="1000"/></figure>
-<figure><img src="https://media4.giphy.com/media/04WTcIaamL4synIujL/giphy.gif?cid=790b7611c350ad88a59597a0a129742b55d96be624d91624&rid=giphy.gif&ct=g" width="1000" height="1000"/></figure>  
+<figure><img src="https://media3.giphy.com/media/hoai6BFX2uvBbivDgM/giphy.gif?cid=790b76113fe48e30dfcf666498aa7eb0a340bf6a81b65ab3&rid=giphy.gif&ct=g" width="800px" height="800px"/></figure>
+<figure><img src="https://media3.giphy.com/media/dscJCzwuZYrBonT0DM/giphy.gif?cid=790b761145c95ac0214151fcde590d7d2e0a0f238250f18d&rid=giphy.gif&ct=g" width="800px" height="800px"/></figure>
+<figure><img src="https://media0.giphy.com/media/SuhiuOK0XfClW7eJGc/giphy.gif?cid=790b76118a60bbd86fd8acdb7a77f009c86349b41dcdde13&rid=giphy.gif&ct=g" width="800px" height="800px"/></figure>
+<figure><img src="https://media1.giphy.com/media/VUzX0Pt9RbKYA2nBnc/giphy.gif?cid=790b7611ae55913e8efe886abe222fface0be648b9143562&rid=giphy.gif&ct=g" width="800" height="800"/></figure>
+<figure><img src="https://media0.giphy.com/media/mz6ACkCXDtZY6brRgi/giphy.gif?cid=790b7611a8fd10b4c100b86c04c5ffcebf4a8022198577a3&rid=giphy.gif&ct=g" width="800" height="800"/></figure>
+<figure><img src="https://media2.giphy.com/media/dqxvHmzAkGT0jAZ3fo/giphy.gif?cid=790b7611fd9e4cdcb4bba86de3fabdaca4c2c8d2133bf38e&rid=giphy.gif&ct=g" width="800" height="800"/></figure>
+<figure><img src="https://media2.giphy.com/media/enhWl6VRtLGA7m1HRF/giphy.gif?cid=790b761192b324ab4b6ca0e4ff858c802241bd2cc5167428&rid=giphy.gif&ct=g" width="800" height="800"/></figure>
+<figure><img src="https://media3.giphy.com/media/TXZaPWXRqB79iEnpth/giphy.gif?cid=790b761145147e6229ffce689e60f68f394617e5ad7837f5&rid=giphy.gif&ct=g" width="800" height="800"/></figure>
+<figure><img src="https://media2.giphy.com/media/2tfoW38m7KBLbU0MtA/giphy.gif?cid=790b76112cade381cc6b91ee2d4463e2036ec386e01c7536&rid=giphy.gif&ct=g" width="800" height="800"/></figure>
+<figure><img src="https://media4.giphy.com/media/04WTcIaamL4synIujL/giphy.gif?cid=790b7611c350ad88a59597a0a129742b55d96be624d91624&rid=giphy.gif&ct=g" width="800" height="800"/></figure>  
   <footer class="footer">
     <div class="container-fluid footer-manage text-center">
       <div class="row">
