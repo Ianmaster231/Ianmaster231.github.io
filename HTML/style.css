@@ -108,16 +108,19 @@
   .btn-glow2 {
     font-family: Verdana, sans-serif;
     font-size: auto;
-    width:auto;
+    width:150px;
     font-weight: bold;
     color: #fff;
     background-color: #6f4cff26;
     border: 3px solid #6f4cff90;
-    padding: 3px 15px;
+    padding: 5px 15px;
     cursor: pointer;
     border-radius: 50px;
     transition: all .3s ease;
     text-align: center;
+    margin-left:-73px;
+    position: absolute;
+    
   }
   
   .btn-glow2:hover {
