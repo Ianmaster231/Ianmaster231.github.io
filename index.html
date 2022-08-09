@@ -165,7 +165,13 @@ padding-bottom:50px;
 .btn-contact{
   color:#e8f5e9;
 }
-
+.myImage{
+  display: block;
+		border-radius: 15%;
+		width: 200px;
+		height: 70%;
+		margin: 0 auto;
+}
 /*--Parallax--*/
 .intro-header {
     height: 600px;  
@@ -180,12 +186,13 @@ padding-bottom:50px;
   background:rgba(0,0,0, 0.3);
   height: 450px;
 }
-#profilePic{
-  display: block;
-		border-radius: 15%;
-		width: 43%;
-		height: 4%;
-		margin: 0 auto;
+#mainImage{
+  
+  image-orientation: inherit;
+	margin-left: -70%;
+  
+		
+		
 }
 .img{
   margin-top:50px;
@@ -384,7 +391,9 @@ kbd{
             <div class="col-md-4">
             </div>
             <div class="col-md-4">
-              <img src="../HTML/Images/Profile2.jpg" class="img-responsive" id="profilePic"></img>
+              <div class ="container">
+                <img id="mainImage" src="https://media.discordapp.net/attachments/827905337666961498/1006682551609471147/PFT4.jpg?width=320&height=430"/>
+                  </div>
             </div>
             <div class="col-md-4">
             </div>
@@ -616,6 +625,24 @@ $(function () {
   $('[data-toggle="tooltip"]').tooltip();
 });
 //# sourceURL=pen.js
+
+var myImage = document.getElementById("mainImage");
+
+var imageArray = ["https://media.discordapp.net/attachments/827905337666961498/1006682564137853038/PFT5.jpg?width=316&height=430", "https://media.discordapp.net/attachments/827905337666961498/1006686226163712073/PFT1.jpg?width=321&height=430",
+"https://media.discordapp.net/attachments/827905337666961498/1006686264084414514/Ian_portrait.jpg?width=321&height=430"
+                 ]
+
+var imageIndex = 0;
+
+function changeImage() {
+  myImage.setAttribute("src",imageArray[imageIndex]);
+  imageIndex++;
+  if (imageIndex >= imageArray.length) {
+    imageIndex = 0;
+  }
+}
+
+setInterval(changeImage,1500);
     </script>
 
   
