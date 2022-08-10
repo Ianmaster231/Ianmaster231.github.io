@@ -215,6 +215,12 @@ div h2 {
 		letter-spacing: 0.2em;
     
 	}
+  #mainImage{
+  height:210px;
+	margin-left: -12px;
+  border-radius: 5%;
+  position:sticky;
+}
   a {
   outline: none;
   text-decoration: none;
@@ -374,40 +380,21 @@ kbd{
   </nav>
   <div id="Home" class="intro-header">
     <div class="bg-overlay">
-      <div class="container">
-        
-          <div class="col-md-12 ">
-            <div class="col-md-4">
+      <div class="container" style="padding-top: 50px;">
+          <img id="mainImage" src="https://media.discordapp.net/attachments/827905337666961498/1006682551609471147/PFT4.jpg?width=320&height=430"/>
+            <div id="name" style="padding-top: 20px;">
+              <p style="color: #F9F6EE;
+              font-family: Verdana, sans-serif;font-size:25px;text-align:center;">Ian Zammit</p>
+              <p style="color: #F9F6EE;
+              font-family: Verdana, sans-serif;font-size:20px;text-align:center;">Thesis Project</p>
             </div>
-            <div class="col-md-4">
-              <img src="/HTML/Images/Profile2.jpg" class="img-responsive" id="profilePic"></img>
-            </div>
-            <div class="col-md-4">
-            </div>
+                <form method="get" action="../index.html" >
+                  <button class="btn-glow">Home</button>   
+                </form>
+              <br>
           </div>
-          
-            <div class="col-md-2">
-            </div>
-            <div id="name" class="col-md-8">
-              <h2 style="font-size: 20px;">Ian Zammit<span>| Final Year Thesis 2022 |</span></h2>
-                
-            </div>
-            <div class="col-md-2">
-            </div>
-          
-          <div class="row">
-            <div class="col-md-4"></div>
-            <div class="col-md-4">
-              <form method="get" action="../index.html" >
-                <button class="btn-glow2">Home</button>   
-              </form>
-            </div>
-            <div class="col-md-4"></div>
-          </div>
-        
       </div>
     </div>
-  </div>
   </div>
  <!-- <blockquote class="text-center">
     <p><i class="fa fa-quote-left fa-1x"></i> There is no substitute to hardwork</p>
@@ -416,8 +403,7 @@ kbd{
 -->
 
   <div id="Thesis" class="about-header">
-    <p style="color: #F9F6EE;
-font-family: Verdana, sans-serif;font-size:30px;text-align:center;">| Thesis |</p>
+   
     <div class="container box">
     <p style="text-align:justify;font-size:16px; font-family: Verdana, sans-serif; color:lightgoldenrodyellow;">
               This is my thesis that I have done on my final year for my Degree it is called the <strong><u><a href="https://mcastedu-my.sharepoint.com/:b:/g/personal/ian_zammit_a100896_mcast_edu_mt/Edurx4DMpBtKv1U3JQh1cVQBN7FzDeDEtqUEodBWtDiTSw?e=1ZBVaL">What is the most effective learning experience for students, is it video 
@@ -542,6 +528,24 @@ $(function () {
   $('[data-toggle="tooltip"]').tooltip();
 });
 //# sourceURL=pen.js
+
+var myImage = document.getElementById("mainImage");
+
+var imageArray = ["https://media.discordapp.net/attachments/827905337666961498/1006682564137853038/PFT5.jpg?width=316&height=430", "https://media.discordapp.net/attachments/827905337666961498/1006686226163712073/PFT1.jpg?width=321&height=430",
+"https://media.discordapp.net/attachments/827905337666961498/1006686264084414514/Ian_portrait.jpg?width=321&height=430"
+                 ]
+
+var imageIndex = 0;
+
+function changeImage() {
+  myImage.setAttribute("src",imageArray[imageIndex]);
+  imageIndex++;
+  if (imageIndex >= imageArray.length) {
+    imageIndex = 0;
+  }
+}
+
+setInterval(changeImage,4000);
     </script>
 
   

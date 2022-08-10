@@ -129,21 +129,33 @@
     box-shadow: #6f4cff80 0 0 20px 0;
     transition: all .3s ease;
   }
-
+  .blink_me {
+    animation: blinker 2s linear infinite;
+  }
+  
+  @keyframes blinker {
+    0% {
+      opacity: 0;
+    }
+    50%{
+      opacity:100;
+      
+    }
+  }
   .btn-glow {
     font-family: Verdana, sans-serif;
     font-size: auto;
-    width:200px;
+    width:210px;
     font-weight: bold;
     color: #fff;
     background-color: #6f4cff26;
     border: 3px solid #6f4cff90;
-    padding: 5px 15px;
+    padding: 6px 5px;
     cursor: pointer;
     border-radius: 50px;
     transition: all .3s ease;
     text-align: center;
-    margin-left: -9px;
+    
   }
   
   .btn-glow:hover {
