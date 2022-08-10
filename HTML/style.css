@@ -130,14 +130,14 @@
     transition: all .3s ease;
   }
   .blink_me {
-    animation: blinker 2s linear infinite;
+    animation: blinker 3s linear infinite;
   }
   
   @keyframes blinker {
     0% {
       opacity: 0;
     }
-    50%{
+    20%{
       opacity:100;
       
     }
