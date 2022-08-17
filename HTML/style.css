@@ -308,8 +308,13 @@
       display: none;
     }
     .wrapper .row{
-      margin: 10px 0;
+      margin: 2px 0 10px 2px;
+      position: center;
+      width: 60%;
+      height:60%;
+
     }
+   
   }
   .video-container {
       overflow: hidden;
