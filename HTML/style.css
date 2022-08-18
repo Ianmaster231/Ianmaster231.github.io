@@ -314,7 +314,10 @@
       height:60%;
 
     }
-   
+   .persongraphic{
+    width: 100px;
+    height: 50px;
+   }
   }
   .video-container {
       overflow: hidden;
