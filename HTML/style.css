@@ -305,18 +305,16 @@
     .wrapper .center-line,
     .row section::before,
     .row section .icon{
-      display: none;
+      display:inline;
     }
-    .wrapper .row{
-      margin: 2px 0 10px 2px;
-      position: center;
-      width: 60%;
-      height:60%;
-
-    }
+   
    .persongraphic{
-    width: 100px;
-    height: 50px;
+    width: 150px;
+    height: 120px;
+   }
+   .gifgif{
+    width: 150px;
+    height: 120px;
    }
   }
   .video-container {
