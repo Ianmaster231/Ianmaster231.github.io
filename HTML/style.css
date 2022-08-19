@@ -164,6 +164,14 @@
     box-shadow: #6f4cff80 0 0 20px 0;
     transition: all .3s ease;
   }
+  .persongraphic{
+    width:350px;
+    height: 200px;
+  }
+  .gifgif{
+    width:350px;
+    height: 200px;
+  }
 
   .nadir-btn-reverse {
     background: #fff;
@@ -302,12 +310,15 @@
     }
   }
   @media(max-width: 440px){
-    .wrapper .center-line,
+   
     .row section::before,
     .row section .icon{
       display:inline;
     }
-   
+    .wrapper .center-line{
+    height: 80%;
+    left: 40px;
+   }
    .persongraphic{
     width: 150px;
     height: 120px;
