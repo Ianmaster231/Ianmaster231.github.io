@@ -336,6 +336,9 @@
   .icon3{
     display: none;
   }
+  .icon1{
+   display:flex;
+  }
   }
   .video-container {
       overflow: hidden;
