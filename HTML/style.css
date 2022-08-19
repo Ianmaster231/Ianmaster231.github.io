@@ -165,7 +165,7 @@
     transition: all .3s ease;
   }
   .persongraphic{
-    width:350px;
+    width:320px;
     height: 200px;
   }
   .gifgif{
@@ -327,7 +327,9 @@
     width: 200px;
     height: 120px;
    }
-  
+  .readmore{
+    padding: 3px;
+  }
   }
   .video-container {
       overflow: hidden;
