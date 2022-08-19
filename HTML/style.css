@@ -296,6 +296,10 @@
     .icon3{
       display: none;
     }
+
+    .icon1{
+      display: none;
+    }
     .wrapper .center-line{
       left: 40px;
     }
