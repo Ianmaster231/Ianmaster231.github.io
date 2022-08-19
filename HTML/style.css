@@ -293,6 +293,9 @@
     transform: scale(0.97);
   }
   @media(max-width: 790px){
+    .icon3{
+      display: none;
+    }
     .wrapper .center-line{
       left: 40px;
     }
@@ -329,6 +332,9 @@
    }
   .readmore{
     padding: 3px;
+  }
+  .icon3{
+    display: none;
   }
   }
   .video-container {
