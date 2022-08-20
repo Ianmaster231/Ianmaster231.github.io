@@ -157,7 +157,9 @@
     text-align: center;
     
   }
-  
+  .icon4{
+    display: none;
+   }
   .btn-glow:hover {
     background-color: #6f4cff59;
     border: 3px solid #6f4cff99;
@@ -294,7 +296,11 @@
   }
   @media(max-width: 790px){
     
-
+    .icon1{
+      float:left;
+    margin:0;
+      display: block;
+    }
    
     .wrapper .center-line{
       left: 40px;
@@ -313,7 +319,11 @@
     }
   }
   @media(max-width: 440px){
-   
+    .icon1{
+      float:left;
+    margin:0;
+      display: block;
+    }
     .row section::before,
     .row section .icon{
       display:inline;
@@ -332,10 +342,6 @@
    }
   .readmore{
     padding: 3px;
-  }
- 
-  .icon1{
-   display:inline;
   }
   }
   .video-container {
