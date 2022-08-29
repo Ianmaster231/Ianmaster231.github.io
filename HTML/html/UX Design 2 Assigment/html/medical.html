@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+     <!--This is where the css is connected-->
+<link rel="stylesheet" href="../html/css/style2.css">
+        <link rel="stylesheet" href="../html/css/medical.css">
+    </head>
+    <body>
+        <title>Medical Menu</title>
+     <div class="header">
+         <h4>Medical Menu<a  href="../html/optionmedic.html">
+            <img src="../html/Icons/home.svg"  width="90" height="50"/></a>
+         </h4>
+     </div>
+        <!-- The 4 cards that apear in the screen-->
+    <body translate="no" >
+    <section class="cards">
+      <div class="cards__single">
+        <div class="cards__front">
+          <img
+            class="cards__image"
+            src="../html/Icons/emergancy.svg"
+            alt="Bon Iver album" style="width:80%; margin-left:10%;"/>
+          <h1 class="cards__artist" tabindex="0">Emergancy Department</h1>
+        </div>
+          
+        <div class="cards__back">
+          <h2 tabindex="0">This page consits of all the staff regarding the emergancy department.</h2>
+          <ol>
+              <br>
+            <li>There are 3 departments regarding the emergancy crew there is the ambulance crew, the first responders crew and sergion team.<br><br> Click the button below for more.</li>
+        
+          </ol>
+          <p class="cards__year"><a href="../html/medical/emergencydep.html"><button class ="button1" >Source</button></a>
+          </p>
+         </div>
+       </div>
+        
+        <div class="cards__single">
+        <div class="cards__front">
+          <img
+            class="cards__image"
+            src="../html/Icons/ward.svg"
+            alt="Bon Iver album"style="width:80%; margin-left:10%;"
+          />
+          <h1 class="cards__artist" tabindex="0">Wards</h1>
+          
+        </div>
+        <div class="cards__back">
+          <h2 tabindex="0">This page consits of all the wards that are in the healthcare. </h2>
+          <ol>
+              <br>
+            <li>There is a limited amount of wards due to the size of the healthcare.<br><br> Click the button below for more. </li>
+        
+          </ol>
+          <p class="cards__year"><a href="../html/medical/ward.html"><button class ="button1" >Source</button></a>
+        </p>
+        </div>
+      </div>
+        
+        <div class="cards__single">
+        <div class="cards__front">
+          <img
+            class="cards__image"
+            src="../html/Icons/dental.svg"
+            alt="Bon Iver album" style="width:80%; margin-left:10%;"
+          />
+          <h1 class="cards__artist" tabindex="0">Dental Department</h1>
+          
+        </div>
+        <div class="cards__back">
+          <h2 tabindex="0">This page consits of all the dental department information.</h2>
+          <ol>
+              <br>
+            <li> </li>
+        
+          </ol>
+          <p class="cards__year"><a href="#"><button class ="button1" >Source</button></a>
+        </p>
+        </div>
+      </div>
+        
+        <div class="cards__single">
+        <div class="cards__front">
+          <img
+            class="cards__image"
+            src="../html/Icons/blooddonation.png"
+            alt="Bon Iver album"
+               style="border-radius: 100%; width:100%;"
+          />
+          <h1 class="cards__artist" tabindex="0">Blood Bank</h1>
+          
+        </div>
+        <div class="cards__back">
+          <h2 tabindex="0">This page consits of all the information regarding the blood bank</h2>
+          <ol>
+              <br>
+            <li>This is a blood bank where people can donate there blood, find there blood type and more <br><br> Click the button below for more.</li>
+        
+          </ol>
+          <p class="cards__year"><a href="../html/medical/Blood.html"><button class ="button1" >Source</button></a>
+        </p>
+        </div>
+      </div>
+            </section>
+            
+            
+            <!-- The animation that flips the card when clicked-->
+            <script id="rendered-js" >
+                const cards = document.querySelectorAll(".cards__single");
+
+                function flipCard() {
+                  this.classList.toggle("flip");
+                }
+                cards.forEach(card => card.addEventListener("click", flipCard));
+
+
+
+                //You can see full tutorial here
+                //https://www.ricardomoreira.io/blog/2020-06-15-flip-cards-with-javascript
+                //# sourceURL=pen.js
+    </script>
+            
+      
+        </body>
+    </body>
+</html>
+ 
+
+ 

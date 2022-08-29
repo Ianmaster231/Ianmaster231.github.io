@@ -1,0 +1,240 @@
+@import "https://fonts.googleapis.com/css?family=Josefin+Sans:400,700";
+@import "https://fonts.googleapis.com/css2?family=Roboto+Condensed&family=Roboto+Mono:wght@500&family=Roboto:wght@400;500&display=swap";
+
+@media (min-width: 900px) {
+  .cards { grid-template-columns: repeat(3, 1fr); }
+}
+
+body {
+    
+  margin: 0;
+  padding: 0;
+  font-family: "Josefin Sans", sans-serif;
+
+}
+body a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.card {
+  position:absolute;
+  top:40%;
+  left: 20%;
+  height: 30%;
+  width: 23%;
+  transform: translate(-50%, -50%);
+  transform-style: preserve-3d;
+  perspective: 600px;
+  transition: 0.5s;
+}
+.card:hover .card-front {
+  transform: rotateX(-180deg);
+}
+.card:hover .card-back {
+  transform: rotateX(0deg);
+}
+
+.card-front {
+  height: 100%;
+  width: 100%;
+  background-image: url(https://i.insider.com/5942d0c59a7af5a3038b4664?width=656&format=jpeg);
+  background-position: 50% 50%;
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #000000;
+  backface-visibility: hidden;
+  transform: rotateX(0deg);
+  transition: 0.5s;
+}
+
+.card-back {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #000000;
+  backface-visibility: hidden;
+  transform: rotateX(180deg);
+  transition: 0.5s;
+  color: #ffffff;
+  text-align: center;
+}
+.card-back h2 {
+  margin: 40% auto 35% auto;
+  font-size: 26px;
+    color: white;
+}
+.card-back h2 span {
+  font-size: 20px;
+}
+.card-back a {
+  height: 20px;
+  width: 20px;
+  padding: 5px 5px;
+  border-radius: 4px;
+  line-height: 20px;
+}
+.card-back a:hover {
+  color: #000000;
+  background-color: #fff;
+}
+
+.card1 {
+  position:absolute;
+  top:40%;
+  left: 50%;
+  height: 30%;
+  width: 25%;
+  transform: translate(-50%, -50%);
+  transform-style: preserve-3d;
+  perspective: 600px;
+  transition: 0.5s;
+}
+.card1:hover .card-front1 {
+  transform: rotateX(-180deg);
+}
+.card1:hover .card-back1 {
+  transform: rotateX(0deg);
+}
+
+.card-front1 {
+  height: 100%;
+  width: 100%;
+  background-image: url(https://www.catphones.com/en-gb/wp-content/uploads/2018/10/emergency-services.jpg);
+  background-position: 50% 50%;
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #000000;
+  backface-visibility: hidden;
+  transform: rotateX(0deg);
+  transition: 0.5s;
+}
+
+.card-back1 {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #000000;
+  backface-visibility: hidden;
+  transform: rotateX(180deg);
+  transition: 0.5s;
+  color: #ffffff;
+  text-align: center;
+}
+.card-back1 h2 {
+  margin: 40% auto 35% auto;
+  font-size: 26px;
+    color: white;
+}
+.card-back1 h2 span {
+  font-size: 20px;
+}
+.card-back1 a {
+  height: 20px;
+  width: 20px;
+  padding: 5px 5px;
+  border-radius: 4px;
+  line-height: 20px;
+}
+.card-back1 a:hover {
+  color: #000000;
+  background-color: #fff;
+}
+
+
+.card2 {
+  position:absolute;
+  top:40%;
+  left: 80%;
+  height: 30%;
+  width: 25%;
+  transform: translate(-50%, -50%);
+  transform-style: preserve-3d;
+  perspective: 600px;
+  transition: 0.5s;
+}
+.card2:hover .card-front2 {
+  transform: rotateX(-180deg);
+}
+.card2:hover .card-back2 {
+  transform: rotateX(0deg);
+}
+
+.card-front2 {
+  height: 100%;
+  width: 100%;
+  background-image: url(https://pbs.twimg.com/media/DcGnv1pXUAAm3-b?format=jpg&name=large);
+  background-position: 50% 50%;
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #000000;
+  backface-visibility: hidden;
+  transform: rotateX(0deg);
+  transition: 0.5s;
+}
+
+.card-back2 {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #000000;
+  backface-visibility: hidden;
+  transform: rotateX(180deg);
+  transition: 0.5s;
+  color: #ffffff;
+  text-align: center;
+}
+.card-back2 h2 {
+  margin: 40% auto 35% auto;
+  font-size: 26px;
+    color: white;
+}
+.card-back2 h2 span {
+  font-size: 20px;
+}
+.card-back2 a {
+  height: 20px;
+  width: 20px;
+  padding: 5px 5px;
+  border-radius: 4px;
+  line-height: 20px;
+}
+.card-back2 a:hover {
+  color: #000000;
+  background-color: #fff;
+}
+
+h3{
+    font-family: roboto;
+    text-align: center;
+    color: white;
+    font-size: 40px;
+}
+
+    
+contact-form{
+    box-sizing: 
+border: solid #5B6DCD 10px;
+padding: 5px; padding-left: 45%; width:80px;
+}
+
+h2{
+  text-align: center;
+   font-size: 35px;
+}
+
+.myClickState {
+  border-color: lime;
+}

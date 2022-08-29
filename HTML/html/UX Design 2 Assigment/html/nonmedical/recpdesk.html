@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+<link rel="stylesheet" href="../css/style2.css">
+    <link rel="stylesheet" href="../css/style3.css">
+        
+    <header id="header">
+	<nav class="links" style="--items: 5;">
+		<a href="../nonmedical/recpdesk.html">Reception Desk<img src="../Icons/desk.svg" style="width:40px; height:40px; padding-left: 3px;"></a>
+		<a href="../nonmedical/parking.html">Parking<img src="../Icons/parking.svg" style="width:40px; height:40px;"></a>
+		<a href="../nonmedical/playarea.html">Play Area<img src="../Icons/playarea.svg" style="width:40px; height:40px; p"></a>
+		<a href="#">Cafeteria<img src="../Icons/cafeteria.svg" style="width:40px; height:40px; padding-bottom: 7px; ;"></a>
+		<a href="" >Hospital Layout<img src="../Icons/map.png" style="width:40px; height:40px; padding-left: 4px; border-radius: 100%;"></a> 
+		<span class="line"></span>
+	</nav>
+</header>
+    </head>
+    <body>
+        <h4>Reception Desk<a  href="../optionmedic.html">
+    <img src="../Icons/home.svg"  width="90" height="50"   />
+</a>
+         </h4>
+
+        <h6>Hey all this is the reception desk where all the contact info can be displayed.</h6>
+        
+        <title>Contact Form</title>
+    
+        <br><br>
+        <h3>Contact Us</h3>
+    <form id="contact-form" style="box-sizing: 
+border: solid #5B6DCD 10px;
+padding: 5px; padding-left: 45%; width:80px;">
+        <input type="hidden" name="contact_number">
+        <br><br>
+        <label>Name</label>
+        <input type="text" name="user_name">
+        <br><br>
+        <label>Email</label>
+        <input type="email" name="user_email">
+        <br><br>
+        <label>Message</label>
+        <textarea name="message"></textarea>
+        <input type="submit" value="Send">
+    </form>
+        <canvas id="canvas"  style="width:30%; height:30%; margin-left: 42%; display: inline;" 
+>
+</canvas>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+            // https://dashboard.emailjs.com/admin/integration
+            emailjs.init('YOUR_USER_ID');
+        })();
+    </script>
+    <script type="text/javascript">
+        window.onload = function() {
+            document.getElementById('contact-form').addEventListener('submit', function(event) {
+                event.preventDefault();
+                // generate a five digit number for the contact_number variable
+                this.contact_number.value = Math.random() * 100000 | 0;
+                // these IDs from the previous steps
+                emailjs.sendForm('contact_service', 'contact_form', this)
+                    .then(function() {
+                        console.log('SUCCESS!');
+                    }, function(error) {
+                        console.log('FAILED...', error);
+                    });
+            });
+        }
+    </script>
+<script>
+var canvas = document.getElementById("canvas");
+var ctx = canvas.getContext("2d");
+var radius = canvas.height / 2;
+ctx.translate(radius, radius);
+radius = radius * 0.90
+setInterval(drawClock, 1000);
+
+function drawClock() {
+  drawFace(ctx, radius);
+  drawNumbers(ctx, radius);
+  drawTime(ctx, radius);
+}
+
+function drawFace(ctx, radius) {
+  var grad;
+  ctx.beginPath();
+  ctx.arc(0, 0, radius, 0, 2*Math.PI);
+  ctx.fillStyle = 'white';
+  ctx.fill();
+  grad = ctx.createRadialGradient(0,0,radius*0.95, 0,0,radius*1.05);
+  grad.addColorStop(0, '#333');
+  grad.addColorStop(0.5, 'white');
+  grad.addColorStop(1, '#333');
+  ctx.strokeStyle = grad;
+  ctx.lineWidth = radius*0.1;
+  ctx.stroke();
+  ctx.beginPath();
+  ctx.arc(0, 0, radius*0.1, 0, 2*Math.PI);
+  ctx.fillStyle = '#333';
+  ctx.fill();
+}
+
+function drawNumbers(ctx, radius) {
+  var ang;
+  var num;
+  ctx.font = radius*0.15 + "px arial";
+  ctx.textBaseline="middle";
+  ctx.textAlign="center";
+  for(num = 1; num < 13; num++){
+    ang = num * Math.PI / 6;
+    ctx.rotate(ang);
+    ctx.translate(0, -radius*0.85);
+    ctx.rotate(-ang);
+    ctx.fillText(num.toString(), 0, 0);
+    ctx.rotate(ang);
+    ctx.translate(0, radius*0.85);
+    ctx.rotate(-ang);
+  }
+}
+
+function drawTime(ctx, radius){
+    var now = new Date();
+    var hour = now.getHours();
+    var minute = now.getMinutes();
+    var second = now.getSeconds();
+    //hour
+    hour=hour%12;
+    hour=(hour*Math.PI/6)+
+    (minute*Math.PI/(6*60))+
+    (second*Math.PI/(360*60));
+    drawHand(ctx, hour, radius*0.5, radius*0.07);
+    //minute
+    minute=(minute*Math.PI/30)+(second*Math.PI/(30*60));
+    drawHand(ctx, minute, radius*0.8, radius*0.07);
+    // second
+    second=(second*Math.PI/30);
+    drawHand(ctx, second, radius*0.9, radius*0.02);
+}
+
+function drawHand(ctx, pos, length, width) {
+    ctx.beginPath();
+    ctx.lineWidth = width;
+    ctx.lineCap = "round";
+    ctx.moveTo(0,0);
+    ctx.rotate(pos);
+    ctx.lineTo(0, -length);
+    ctx.stroke();
+    ctx.rotate(-pos);
+}
+</script> 
+</body>
+</html>
+ 

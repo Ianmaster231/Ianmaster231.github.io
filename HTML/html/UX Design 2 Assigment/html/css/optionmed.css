@@ -1,0 +1,43 @@
+body{
+        background-color: black
+    }
+.button {
+
+  color: white;
+  
+  text-align: center;
+  text-decoration:underline;
+  display: inline-block;
+  font-size: 60px;
+  font-family: B612;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.button1 {
+    height:100vh;
+    width: 50%;
+  float: left;
+  background-color: lightgreen;
+  color: black;
+  border: 5px solid #4CAF50;
+}
+
+.button1:hover {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.button2 {
+    height:100vh;
+    width: 50%;
+  float: right;
+  background-color: lightskyblue;
+  color: black;
+  border: 5px solid #008CBA;
+}
+
+.button2:hover {
+  background-color: #008CBA;
+  color: white;
+}
