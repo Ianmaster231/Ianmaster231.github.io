@@ -90,68 +90,269 @@
     </div>
 
     <div id="PG" class="about-header">
-      <p style="color: #F9F6EE;
-    font-family: Verdana, sans-serif;font-size:30px;text-align:center; ">Maya & Blender</p>
-      <div class="container box">
-        <p style="text-align:justify;font-size:16px; font-family: Verdana, sans-serif; color:lightgoldenrodyellow;">
-          In Progress ...
-        </p>
+      <style>
         
-        <!-- <div class="row">
-          <div class="column">
-            <img
-              src="https://media.discordapp.net/attachments/827905337666961498/1010876558120067132/deadspace.png?width=371&height=430"
-              style="width:100%">
-            <img
-              src="https://media.discordapp.net/attachments/827905337666961498/1010876538457169920/Apex1.png?width=764&height=430"
-              style="width:100%">
-            <img
-              src="https://media.discordapp.net/attachments/497333434595672064/826573937676779540/zombieposter2.png?width=764&height=430"
-              style="width:100%">
-
-
+       
+        
+        img {
+          vertical-align: middle;
+        }
+        
+      
+        
+        /* Hide the images by default */
+        .mySlides {
+          display: none;
+        }
+        
+        /* Add a pointer when hovering over the thumbnail images */
+        .cursor {
+          cursor: pointer;
+        }
+        
+        /* Next & previous buttons */
+        .prev,
+        .next {
+          cursor: pointer;
+          position: absolute;
+          top: 40%;
+          width: auto;
+          padding: 16px;
+          margin-top: -50px;
+          color: white;
+          font-weight: bold;
+          font-size: 20px;
+          border-radius: 0 3px 3px 0;
+          user-select: none;
+          -webkit-user-select: none;
+        }
+        
+        /* Position the "next button" to the right */
+        .next {
+          right: 0;
+          border-radius: 3px 0 0 3px;
+        }
+        
+        /* On hover, add a black background color with a little bit see-through */
+        .prev:hover,
+        .next:hover {
+          background-color: rgba(0, 0, 0, 0.8);
+        }
+        
+        /* Number text (1/3 etc) */
+        .numbertext {
+          color: #f2f2f2;
+          font-size: 12px;
+          padding: 8px 12px;
+          position: absolute;
+          top: 0;
+        }
+        
+        /* Container for image text */
+        .caption-container {
+          text-align: center;
+          background-color: #222;
+          padding: 2px 16px;
+          color: white;
+        }
+        
+        .row1:after {
+          content: "";
+          display: table;
+          clear: both;
+        }
+        
+        /* Six columns side by side */
+        .column {
+          float: left;
+          width: 10%;
+        }
+        
+        /* Add a transparency effect for thumnbail images */
+        .demo {
+          opacity: 0.6;
+        }
+        
+        .active,
+        .demo:hover {
+          opacity: 1;
+        }
+        </style>
+        <body>
+        
+          <p style="color: #F9F6EE;
+          font-family: Verdana, sans-serif;font-size:30px;text-align:center; ">Maya Renders</p>
+        <div class="container box">
+        <div class="container">
+        
+          <div class="mySlides">
+            <div class="numbertext"></div>
+            <img src="https://media.discordapp.net/attachments/827905337666961498/1014185843310727288/sunset6.jpg?width=764&height=430" style="width:100%">
           </div>
-          <div class="column">
-            <img
-              src="https://media.discordapp.net/attachments/827905337666961498/1010889406934159440/ExqPlGiW8AUidVQ.png"
-              style="width:100%">
-            <img
-              src="https://media.discordapp.net/attachments/827905337666961498/1010889409144561714/Eel0V3OWoAEN22Q.png?width=764&height=430"
-              style="width:100%">
-            <img
-              src="https://media.discordapp.net/attachments/827905337666961498/1010891170160840764/EyKOyLYXIAQtfJl.png?width=430&height=430"
-              style="width:100%">
-
+        
+          <div class="mySlides">
+            <div class="numbertext"></div>
+            <img src="https://media.discordapp.net/attachments/827905337666961498/1014185842975195176/sunset5.jpg?width=764&height=430" style="width:100%">
           </div>
-          <div class="column">
-            <img
-              src="https://media.discordapp.net/attachments/497333434595672064/824404715084840980/minecraft.png?width=538&height=430"
-              style="width:100%">
-            <img
-              src="https://media.discordapp.net/attachments/497333434595672064/824016843701616690/codwartwitch.png?width=764&height=430"
-              style="width:100%">
-
-            <img
-              src="https://media.discordapp.net/attachments/827905337666961498/1010891171519791186/EyHqrusWgAAupI6.png?width=764&height=430"
-              style="width:100%">
+        
+          <div class="mySlides">
+            <div class="numbertext"></div>
+            <img src="https://media.discordapp.net/attachments/827905337666961498/1014185842635440179/sunset4.jpg?width=764&height=430" style="width:100%">
           </div>
-          <div class="column">
-            <img
-              src="https://media.discordapp.net/attachments/497333434595672064/824016827201617930/gta5stream.png?width=764&height=430"
-              style="width:100%">
-            <img
-              src="https://media.discordapp.net/attachments/827905337666961498/1010891170584477736/Ey8rlBVWYAI65d7.png?width=765&height=430"
-              style="width:100%">
-            <img
-              src="https://media.discordapp.net/attachments/827905337666961498/1010891171066814584/EzBSSElXMAY-BGj.png?width=688&height=430"
-              style="width:100%">
-
-            <img
-              src="https://media.discordapp.net/attachments/497333434595672064/825392494166540318/mordhau2.png?width=765&height=430"
-              style="width:100%">
-
+            
+          <div class="mySlides">
+            <div class="numbertext"></div>
+            <img src="https://media.discordapp.net/attachments/827905337666961498/1014185842253766726/sunset2.jpg?width=764&height=430" style="width:100%">
           </div>
-        </div> -->
+        
+          <div class="mySlides">
+            <div class="numbertext"></div>
+            <img src="https://media.discordapp.net/attachments/827905337666961498/1014185785030869042/interiour4.jpg?width=764&height=430" style="width:100%">
+          </div>
+            
+          <div class="mySlides">
+            <div class="numbertext"></div>
+            <img src="https://media.discordapp.net/attachments/827905337666961498/1014185784343003156/interiour2.jpg?width=764&height=430" style="width:100%">
+          </div>
+            
+          <div class="mySlides">
+            <div class="numbertext"></div>
+            <img src="https://media.discordapp.net/attachments/827905337666961498/1014185783986495518/interiour1.jpg?width=764&height=430" style="width:100%">
+          </div>
+        
+          <div class="mySlides">
+            <div class="numbertext"></div>
+            <img src="https://media.discordapp.net/attachments/827905337666961498/1014185718769275020/exteroir5.png" style="width:100%">
+          </div>
+            
+          <div class="mySlides">
+            <div class="numbertext"></div>
+            <img src="https://media.discordapp.net/attachments/827905337666961498/1014185717469032488/exteroir2.png" style="width:100%">
+          </div>
+
+          <div class="mySlides">
+            <div class="numbertext"></div>
+            <img src="https://media.discordapp.net/attachments/827905337666961498/1014185720279212173/exteroir8.png" style="width:100%">
+          </div>
+        
+          
+        
+          <div class="row1">
+            <div class="column">
+              <img class="demo cursor" src="https://media.discordapp.net/attachments/827905337666961498/1014185843310727288/sunset6.jpg?width=764&height=430"  onclick="currentSlide(1)" >
+            </div>
+            <div class="column">
+              <img class="demo cursor" src="https://media.discordapp.net/attachments/827905337666961498/1014185842975195176/sunset5.jpg?width=764&height=430"  onclick="currentSlide(2)" >
+            </div>
+            <div class="column">
+              <img class="demo cursor" src="https://media.discordapp.net/attachments/827905337666961498/1014185842635440179/sunset4.jpg?width=764&height=430"  onclick="currentSlide(3)" >
+            </div>
+            <div class="column">
+              <img class="demo cursor" src="https://media.discordapp.net/attachments/827905337666961498/1014185842253766726/sunset2.jpg?width=764&height=430"  onclick="currentSlide(4)" >
+            </div>
+            <div class="column">
+              <img class="demo cursor" src="https://media.discordapp.net/attachments/827905337666961498/1014185785030869042/interiour4.jpg?width=764&height=430"  onclick="currentSlide(5)" >
+            </div>    
+            <div class="column">
+              <img class="demo cursor" src="https://media.discordapp.net/attachments/827905337666961498/1014185784343003156/interiour2.jpg?width=764&height=430"  onclick="currentSlide(6)" >
+            </div>
+            <div class="column">
+              <img class="demo cursor" src="https://media.discordapp.net/attachments/827905337666961498/1014185783986495518/interiour1.jpg?width=764&height=430"  onclick="currentSlide(7)" >
+            </div>
+            <div class="column">
+              <img class="demo cursor" src="https://media.discordapp.net/attachments/827905337666961498/1014185718769275020/exteroir5.png"  onclick="currentSlide(8)" >
+            </div>    
+            <div class="column">
+              <img class="demo cursor" src="https://media.discordapp.net/attachments/827905337666961498/1014185717469032488/exteroir2.png"  onclick="currentSlide(9)" >
+            </div>
+            <div class="column">
+              <img class="demo cursor" src="https://media.discordapp.net/attachments/827905337666961498/1014185720279212173/exteroir8.png"  onclick="currentSlide(9)" >
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <p style="color: #F9F6EE;
+          font-family: Verdana, sans-serif;font-size:30px;text-align:center; ">Blender Renders</p>
+        <div class="container box">
+        <div class="container">
+        
+          <div class="mySlides1">
+            <div class="numbertext"></div>
+            <img src="https://media.discordapp.net/attachments/827905337666961498/1014211082816065536/Sword.png" style="width:100%">
+          </div>
+        
+          
+        
+          <div class="row1">
+            <div class="column">
+              <img class="demo cursor" src="https://media.discordapp.net/attachments/827905337666961498/1014211082816065536/Sword.png"  onclick="currentSlide1(1)" >
+            </div>
+            
+          </div>
+        </div>
+      </div>
+        <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
+        
+        function plusSlides(n) {
+          showSlides(slideIndex += n);
+        }
+        
+        function currentSlide(n) {
+          showSlides(slideIndex = n);
+        }
+        
+        function showSlides(n) {
+          let i;
+          let slides = document.getElementsByClassName("mySlides");
+          let dots = document.getElementsByClassName("demo");
+          let captionText = document.getElementById("caption");
+          if (n > slides.length) {slideIndex = 1}
+          if (n < 1) {slideIndex = slides.length}
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+          }
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";
+          dots[slideIndex-1].className += " active";
+          captionText.innerHTML = dots[slideIndex-1].alt;
+        }
+        </script>
+
+<script>
+  let slideIndex1 = 1;
+  showSlides(slideIndex1);
+  
+  function plusSlides(n) {
+    showSlides(slideIndex1 += n);
+  }
+  
+  function currentSlide(n) {
+    showSlides(slideIndex1 = n);
+  }
+  
+  function showSlides(n) {
+    let i;
+    let slides1 = document.getElementsByClassName("mySlides1");
+    let dots = document.getElementsByClassName("demo");
+    let captionText = document.getElementById("caption");
+    if (n > slides1.length) {slideIndex1 = 1}
+    if (n < 1) {slideIndex1 = slides.length}
+    for (i = 0; i < slides1.length; i++) {
+      slides1[i].style.display = "none";
+    }
+    for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides1[slideIndex1-1].style.display = "block";
+    dots[slideIndex1-1].className += " active";
+    captionText.innerHTML = dots[slideIndex1-1].alt;
+  }
+  </script>
       </div>
       <br>
       <br>
@@ -612,10 +813,10 @@
       padding: 32px;
     }
 
-    .row {
+    .row1 {
       display: -ms-flexbox;
       /* IE10 */
-      display: flex;
+      /*display: flex;
       -ms-flex-wrap: wrap;
       /* IE10 */
       flex-wrap: wrap;
@@ -633,7 +834,7 @@
 
     .column img {
       margin-top: 8px;
-      vertical-align: middle;
+      vertical-align: left;
       width: 100%;
     }
 
