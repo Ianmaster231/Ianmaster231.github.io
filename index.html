@@ -1,0 +1,206 @@
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ian Zammit Portfolio</title>
+    <link rel="stylesheet" href="./CSS/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/github-calendar/dist/github-calendar-responsive.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+    <link rel="icon" type="image/x-icon" href="./PDF/websiteicon.jpg">
+    <style>
+      
+    </style>
+</head>
+<body>
+    <!-- Loading Page -->
+    <div id="loading-container">
+        <div class="spinner"></div>
+    </div>
+
+    <!-- Main Content -->
+    <div id="main-content">
+        <div id="app">
+            <header>
+                <img src="https://media.discordapp.net/attachments/827905337666961498/1264645849057726475/20240528_114853.jpg?ex=673c2bfa&is=673ada7a&hm=ecb5e467d932fe937dd41dfac9ad694d9886c54cb36b67dc1a54684b71083318&=&format=webp&width=304&height=306" alt="Profile Picture">
+                <div>
+                    <h1>Ian Zammit</h1>
+                    <!-- <p>Junior Software Developer </p>
+                    <p>Multimedia Software Developer Bachelor's Degree</p> -->
+                    <a href="./PDF/IanZammitCV.pdf" download="IanZammitCV.pdf">
+                        <button style="
+                            background-color: #d4eafd; 
+                            border: 2px solid #007acc; 
+                            color: #007acc; 
+                            padding: 10px 15px; 
+                            border-radius: 8px; 
+                            font-size: 16px; 
+                            font-weight: bold; 
+                            cursor: pointer; 
+                            transition: all 0.3s ease;
+                            margin-top: 10px;
+                        "
+                        onmouseover="this.style.backgroundColor='#007acc'; this.style.color='#fff';"
+                        onmouseout="this.style.backgroundColor='#d4eafd'; this.style.color='#007acc';">
+                            CV File
+                        </button>
+                    </a>
+                    <br>
+                    <div class="social-links">
+                        <a href="https://www.linkedin.com/in/ian-zammit-7a0891154/" target="_blank" title="LinkedIn">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        
+                        <a href="https://github.com/ianmaster231" target="_blank" title="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+
+                        <a href="https://www.facebook.com/zammitian1/" target="_blank" title="Facebook">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                    </div>
+                </div>
+            </header>
+            <section id="about">
+                <h2>About Me</h2>
+                <p>Welcome to my website! My name is Ian Zammit, and I am proud to call Malta my home, where I was born and raised. I have a deep passion for collecting a variety of unique items, expressing creativity through drawing, and staying active through fitness pursuits such as gym workouts and running. I also have a love for exploring new destinations through travel. <br><br>I am passionate about continuing to grow my career in the field of Information and Communication Technology, where I have invested significant effort and dedication to excel. <br><br> Thank you for visiting, and I hope you enjoy learning more about my interests, journey, and work experience!</p>
+            </section>
+            <section id="skills">
+                <h2>Programming Languages </h2>
+                <p>C#, Java, Swift</p>
+            </section>
+            <section id="framework">
+                <h2>Framework</h2>
+                <p>Angular, SQL, VB.NET, Android Studio</p>
+            </section>
+            <section id="web-technologies">
+                <h2>Web Technologies</h2>
+                <p>HTML, CSS, JavaScript/TypeScript</p>
+            </section>
+            <footer>
+                <p>&copy; 2024 Ian Zammit</p>
+            </footer>
+        </div>
+    </div>
+    <script src="./JS/app.js"></script>
+    <script>
+        // JavaScript to hide the loading page after the page fully loads
+        window.addEventListener('load', () => {
+    const loadingContainer = document.getElementById('loading-container');
+    const mainContent = document.getElementById('main-content');
+
+    // Fade out the loading screen
+    loadingContainer.style.transition = 'opacity 1s ease';
+    loadingContainer.style.opacity = '0';
+
+    // Remove the loading screen and show content after fade-out
+    setTimeout(() => {
+        loadingContainer.style.display = 'none';
+        mainContent.style.visibility = 'visible';
+    }, 500); // Match fade-out duration
+});
+    </script>
+</body>
+</html>
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Developer Portfolio</title>
+    <link rel="stylesheet" href="../CSS/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/github-calendar/dist/github-calendar-responsive.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+</head>
+<body>
+     <div id="loading-container">
+        <div class="spinner"></div>
+    </div>
+
+    <div id="main-content">
+    <div id="app">
+        <header>
+            <img src="https://media.discordapp.net/attachments/827905337666961498/1264645849057726475/20240528_114853.jpg?ex=673c2bfa&is=673ada7a&hm=ecb5e467d932fe937dd41dfac9ad694d9886c54cb36b67dc1a54684b71083318&=&format=webp&width=304&height=306" alt="Profile Picture">
+            <div>
+                <h1>Ian Zammit</h1>
+                <p>Junior Software Developer</p>
+                 
+                <a href="../PDF/IanZammitCV.pdf" download="IanZammitCV.pdf">
+                    <button style="
+                        background-color: #d4eafd; 
+                        border: 2px solid #007acc; 
+                        color: #007acc; 
+                        padding: 10px 15px; 
+                        border-radius: 8px; 
+                        font-size: 16px; 
+                        font-weight: bold; 
+                        cursor: pointer; 
+                        transition: all 0.3s ease;
+                        margin-top: 10px;
+                    "
+                    onmouseover="this.style.backgroundColor='#007acc'; this.style.color='#fff';"
+                    onmouseout="this.style.backgroundColor='#d4eafd'; this.style.color='#007acc';">
+                        CV File
+                    </button>
+                </a>
+                <br>
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/ian-zammit-7a0891154/" target="_blank" title="LinkedIn">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    
+                    <a href="https://github.com/ianmaster231" target="_blank" title="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+
+                    <a href="https://www.facebook.com/zammitian1/" target="_blank" title="GitHub">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                     
+                </div>
+            
+            </div>
+        </header>
+        <section id="about">
+            <h2>About Me</h2>
+            <p>Welcome to my website! My name is Ian Zammit, and I am proud to call Malta my home, where I was born and raised. I have a deep passion for collecting a variety of unique items, expressing creativity through drawing, and staying active through fitness pursuits such as gym workouts and running. I also have a love for exploring new destinations through travel. Thank you for visiting, and I hope you enjoy learning more about my interests, journey and work experience ! </p>
+        </section>
+        <section id="skills">
+            <h2>Programming Languages</h2> 
+            <p>
+                C#, Java, Swift
+            </p>
+             
+        </section>
+        <section id="hobbies">
+            <h2>Framework</h2>
+            <p>Angular, SQL, VB.NET, Android Studio</p>
+        </section> 
+        <section id="hobbies">
+            <h2>Web Technologies</h2>
+            <p> HTML, CSS, JavaScript/Typescript </p>
+        </section> 
+        <section>
+            <div class="container">
+             
+                <h2>My Github Repositories</h2>
+                <div id="repo-list">
+                    <p>Loading repositories...</p>
+                </div> 
+            </div>
+        
+            <script src="https://unpkg.com/github-calendar"></script>
+            
+
+        </section>
+        <footer>
+            <p>&copy; 2024 Ian Zammit</p>
+        </footer>
+    </div>
+</div>
+    <script src="../JS/app.js"></script>
+</body>
+</html> 
+ 
+  -->
